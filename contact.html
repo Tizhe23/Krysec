@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Krypton Security helps organisations improve cyber resilience with practical offensive and defensive security services.">
+  <title>Contact | Krypton Security</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-copy{max-width:820px}
+    .hero h1{max-width:900px}
+    .hero .lead{max-width:650px}
+    .section-intro{max-width:720px}
+    .muted-list{display:grid;gap:.7rem;list-style:none;margin-top:1rem}
+    .muted-list li{display:flex;gap:.65rem;color:var(--dim)}
+    .muted-list li::before{content:'—';color:var(--tx)}
+    .mini-label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+    .f .btn{width:max-content}
+    .note{margin-top:.3rem}
+    .numbered{display:grid;gap:1rem;counter-reset:item}
+    .numbered article{counter-increment:item;display:grid;grid-template-columns:42px 1fr;gap:1rem;align-items:start;padding:1.1rem 0;border-bottom:1px solid var(--b1)}
+    .numbered article::before{content:'0' counter(item);font-size:.8rem;color:var(--dim)}
+    .numbered h3{margin-bottom:.35rem}
+    .about-statement{font-size:clamp(1.4rem,3.5vw,2.3rem);line-height:1.35;color:var(--tx);max-width:850px}
+    @media(max-width:560px){.f .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+<main>
+  <section class="phead bg"><div class="wrap" data-rv>
+    <span class="eyebrow">Contact</span><h1>Let's make security more manageable.</h1>
+    <p class="lead">Tell us a little about your organisation and what you need help with. We'll use that information to understand how best to respond.</p>
+  </div></section>
+  <section style="padding-top:2rem"><div class="wrap split">
+    <div data-rv>
+      <span class="eyebrow">Start here</span><h2>What would you like to protect?</h2>
+      <p>Use the form to describe your priorities, questions or current security challenge. Please do not include passwords, secret keys or sensitive incident data.</p>
+      <div class="clinks">
+        <a class="clink" href="mailto:hello@kryptonsec.com"><div><small>Email</small><strong>hello@kryptonsec.com</strong></div></a>
+        <div class="clink"><div><small>Location</small><strong>Lagos, Nigeria</strong></div></div>
+      </div>
+      <p style="margin-top:1.2rem;font-size:.8rem">Contact details and service information in this starter site are placeholders until you verify them.</p>
+    </div>
+    <div class="panel" data-rv>
+      <form id="cf" class="f">
+        <div class="two">
+          <div class="fd"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required minlength="2" placeholder="Jane Doe"><small>Please enter at least 2 characters.</small></div>
+          <div class="fd"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com"><small>Please enter a valid email address.</small></div>
+        </div>
+        <div class="fd"><label for="organisation">Organisation</label><input id="organisation" name="organisation" autocomplete="organization" required minlength="2" placeholder="Your organisation"><small>Please enter your organisation.</small></div>
+        <div class="fd"><label for="topic">What can we help with?</label><select id="topic" name="topic"><option value="">Select a service (optional)</option><option data-topic="pentest" value="Penetration Testing">Penetration Testing</option><option data-topic="soc" value="SOC-as-a-Service">SOC-as-a-Service</option><option data-topic="cloud" value="Cloud Security">Cloud Security</option><option data-topic="compliance" value="Compliance and GRC">Compliance and GRC</option><option data-topic="intel" value="Threat Intelligence">Threat Intelligence</option><option data-topic="awareness" value="Security Awareness">Security Awareness</option><option value="Other">Other</option></select></div>
+        <div class="fd"><label for="message">Message</label><textarea id="message" name="message" required minlength="10" placeholder="Tell us a little about your priorities..."></textarea><small>Please enter at least 10 characters.</small></div>
+        <p class="note" aria-live="polite"></p>
+        <button class="btn pri" type="submit">Send enquiry</button>
+        <p style="font-size:.75rem">This form sends to the email configured in <code>app.js</code>. Test it after verifying the address and activating FormSubmit.</p>
+      </form>
+    </div>
+  </div></section>
+</main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

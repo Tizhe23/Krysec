@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Krypton Security helps organisations improve cyber resilience with practical offensive and defensive security services.">
+  <title>Home | Krypton Security</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-copy{max-width:820px}
+    .hero h1{max-width:900px}
+    .hero .lead{max-width:650px}
+    .section-intro{max-width:720px}
+    .muted-list{display:grid;gap:.7rem;list-style:none;margin-top:1rem}
+    .muted-list li{display:flex;gap:.65rem;color:var(--dim)}
+    .muted-list li::before{content:'—';color:var(--tx)}
+    .mini-label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+    .f .btn{width:max-content}
+    .note{margin-top:.3rem}
+    .numbered{display:grid;gap:1rem;counter-reset:item}
+    .numbered article{counter-increment:item;display:grid;grid-template-columns:42px 1fr;gap:1rem;align-items:start;padding:1.1rem 0;border-bottom:1px solid var(--b1)}
+    .numbered article::before{content:'0' counter(item);font-size:.8rem;color:var(--dim)}
+    .numbered h3{margin-bottom:.35rem}
+    .about-statement{font-size:clamp(1.4rem,3.5vw,2.3rem);line-height:1.35;color:var(--tx);max-width:850px}
+    @media(max-width:560px){.f .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+
+<main>
+  <section class="hero bg">
+    <div class="wrap">
+      <div class="hero-copy" data-rv>
+        <span class="tag">Cybersecurity · Lagos, Nigeria</span>
+        <span class="eyebrow">Stay ahead of the threat</span>
+        <h1>Security that moves at the speed of business.</h1>
+        <p class="lead">Krypton helps organisations find weaknesses, strengthen defences and make confident decisions in a world of changing cyber threats.</p>
+        <div class="acts">
+          <a class="btn pri" href="contact.html">Talk to our team</a>
+          <a class="btn" href="services.html">Explore services</a>
+        </div>
+        <div class="chips">
+          <span class="chip">Offensive security</span><span class="chip">Threat monitoring</span><span class="chip">Risk & compliance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<section>
+    <div class="wrap">
+      <div class="sh section-intro" data-rv>
+        <span class="eyebrow">Built for resilience</span>
+        <h2>Know your risks. Own your response.</h2>
+        <p>Good security is not just a stack of tools. It is a clear understanding of your exposure, a practical plan to reduce risk, and people who know what to do when it matters.</p>
+      </div>
+      <div class="grid" data-stagger>
+        <article class="card"><h3>Find the gaps</h3><p>Assess systems, applications and infrastructure to uncover weaknesses before they become incidents.</p><a class="more" href="services.html#pentest">Explore testing</a></article>
+        <article class="card"><h3>See what is happening</h3><p>Improve visibility with monitoring, alerting and a measured approach to incident readiness.</p><a class="more" href="services.html#soc">Explore monitoring</a></article>
+        <article class="card"><h3>Build lasting confidence</h3><p>Make security and compliance understandable, actionable and aligned with business priorities.</p><a class="more" href="services.html#compliance">Explore GRC</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div data-rv>
+        <span class="eyebrow">A practical approach</span>
+        <h2>Security should enable progress, not slow it down.</h2>
+        <p>We work to make technical risk easier to understand and easier to act on. Recommendations should be clear, prioritised and connected to your organisation's real-world needs.</p>
+        <ul class="muted-list"><li>Clear findings and prioritised next steps</li><li>Security shaped around your environment</li><li>Support for prevention, detection and readiness</li></ul>
+        <div class="acts"><a class="btn" href="about.html">Learn about Krypton</a></div>
+      </div>
+      <div class="panel approach-panel" data-rv>
+        <h3>How we work</h3>
+        <ol>
+          <li><span>01</span><div><strong>Understand your environment</strong><p>Identify the systems, people and processes that matter most.</p></div></li>
+          <li><span>02</span><div><strong>Prioritise the risks</strong><p>Separate urgent issues from longer-term improvements.</p></div></li>
+          <li><span>03</span><div><strong>Make a practical plan</strong><p>Provide clear actions your team can work through.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band" data-rv>
+        <span class="eyebrow">Start a conversation</span>
+        <h2>Make your next security move a confident one.</h2>
+        <p>Tell us what you are trying to protect, what concerns you most, or where you want to improve.</p>
+        <div class="acts"><a class="btn pri" href="contact.html">Contact Krypton</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>
